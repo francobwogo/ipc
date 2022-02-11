@@ -14,12 +14,12 @@ function myFunction() {
     36: { price: 36, views: "1M" },
   };
 
-  let keys = { 0 : 8, 1 : 12, 2 : 16, 3 : 24, 4 : 36 };
+  let keys = { 0: 8, 1: 12, 2: 16, 3: 24, 4: 36 };
 
   let key = keys[keyValue];
 
   if (input.checked == true) {
-    document.getElementById("rate").innerHTML = " / year"
+    document.getElementById("rate").innerHTML = " / year";
     if (key in viewPricing == true) {
       let price = viewPricing[key]["price"];
       let views = viewPricing[key]["views"];
@@ -28,7 +28,7 @@ function myFunction() {
       rate.innerHTML = `\$${price}`;
     }
   } else {
-    document.getElementById("rate").innerHTML = " / month"
+    document.getElementById("rate").innerHTML = " / month";
     if (key in viewPricing == true) {
       let price = viewPricing[key]["price"];
       let views = viewPricing[key]["views"];
@@ -66,11 +66,17 @@ const handleInput = (inputElement) => {
   const handleUpAndLeave = () => (isChanging = false);
   const handleDown = () => (isChanging = true);
 
+  // Desktop
   inputElement.addEventListener("mousemove", handleMove);
   inputElement.addEventListener("mousedown", handleDown);
   inputElement.addEventListener("mouseup", handleUpAndLeave);
   inputElement.addEventListener("mouseleave", handleUpAndLeave);
   inputElement.addEventListener("click", setCSSProperty);
+
+  // Mobile
+  inputElement.addEventListener("touchmove", handleMove);
+  inputElement.addEventListener("touchstart", handleDown);
+  inputElement.addEventListener("touchend", handleUpAndLeave);
 
   // Init input
   setCSSProperty();
