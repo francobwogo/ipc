@@ -39,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 h1 {
@@ -85,14 +85,14 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .main {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-neutral-white-pricing-bg);
   max-width: 320px;
   margin: auto;
-  padding-bottom: 2em;
-  max-height: 750px;
+  max-height: 550px;
   border-top-right-radius: 0.5em;
   border-top-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
@@ -111,8 +111,8 @@ button {
   gap: 1em;
   align-items: center;
   justify-content: center;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-top: 2em;
+  /* padding-bottom: 2em; */
 }
 
 .subscribers {
@@ -124,6 +124,7 @@ button {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+  padding: 0;
 }
 
 .range {
@@ -356,9 +357,7 @@ input[type="range"]::-ms-fill-lower {
   .main {
     max-width: 450px;
   }
-  .pricing {
-    padding-bottom: 0.75em;
-  }
+
   .cta {
     flex-direction: row;
     margin: auto;
