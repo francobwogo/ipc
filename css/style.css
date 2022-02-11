@@ -387,4 +387,8 @@ input[type="range"]::-ms-fill-lower {
     order: 3;
     grid-column: 1 / span 2;
   }
+
+  .pecentage-2 {
+    display: inline-block;
+  }
 }
