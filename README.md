@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/francobwogo/ipc.git)
+- Solution URL: (https://francobwogo.github.io/ipc/)
 - Live Site URL: (https://your-live-site-url.com)
 
 ## My process
