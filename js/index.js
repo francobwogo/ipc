@@ -3,7 +3,7 @@ const range = document.querySelector("#range");
 
 function myFunction() {
   let pageViews = document.querySelector("#subscribers");
-  let rate = document.querySelector(".rate");
+  let rate = document.getElementById("subscription");
   let keyValue = document.getElementById("range").value;
   let input = document.getElementById("toggleswitch");
   let viewPricing = {
